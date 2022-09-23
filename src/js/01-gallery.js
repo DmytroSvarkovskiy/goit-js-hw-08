@@ -7,8 +7,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 const galaryDiv = document.querySelector('.gallery');
 
-const createGalery = collection => 
-    galaryDiv.insertAdjacentHTML('afterbegin', collection.map(cardTemp).join(''));
+// const createGalery = collection => 
+//     galaryDiv.insertAdjacentHTML('afterbegin', collection.map(cardTemp).join(''));
     
 createGalery(galleryItems)
 
