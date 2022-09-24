@@ -10,7 +10,7 @@ const onFormInput = event => {
     localStorage.setItem(LOCAL_DATA_NAME, JSON.stringify(localPrint));
  
 };
-form.addEventListener('input', throttle(onFormInput, 1000));
+form.addEventListener('input', throttle(onFormInput, 500));
  
 const fillForm = () => {
     currentLocal&&currentLocal.email ? form.email.value = currentLocal.email : null;
