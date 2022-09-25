@@ -21,7 +21,7 @@ fillForm();
 
 const onSubmitClick = event => {
     event.preventDefault();
-    console.log("email:", form.email.value); console.log('message:',form.message.value); 
+    console.log({'email': form.email.value,'message':form.message.value}); 
     event.currentTarget.reset();
     localStorage.removeItem(LOCAL_DATA_NAME);
  }
